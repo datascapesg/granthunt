@@ -21,7 +21,7 @@ jobs:
       - name: Check out repo
         uses: actions/checkout@v2
       # The Flat Action step. We fetch the data in the http_url and save it as downloaded_filename
-      - name: Fetch offers
+      - name: Fetch grants
         uses: githubocto/flat@v2
         with:
           http_url: ${{ secrets.GRANTHUNT_AIRTABLE_URL }}
